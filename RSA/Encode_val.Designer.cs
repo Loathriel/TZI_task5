@@ -34,6 +34,11 @@
             this.EG_x = new System.Windows.Forms.NumericUpDown();
             this.EncodeButton = new System.Windows.Forms.Button();
             this.RSA_e = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.RSA_n)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EG_p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EG_g)).BeginInit();
@@ -161,11 +166,61 @@
             0,
             0});
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(210, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(18, 15);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "A:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(108, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 15);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "G:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 15);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "P:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(109, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 15);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "E:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "N:";
+            // 
             // Encode_val
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 173);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.RSA_e);
             this.Controls.Add(this.EncodeButton);
             this.Controls.Add(this.EG_x);
@@ -180,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EG_x)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RSA_e)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,5 +247,10 @@
         private NumericUpDown EG_x;
         private Button EncodeButton;
         private NumericUpDown RSA_e;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }
