@@ -40,7 +40,7 @@ namespace RSA
         {
             var keys = KeyGenerator.GenerateEG();
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                File.WriteAllText(saveFileDialog.FileName, $"Public key: p = {keys[0]}, g = {keys[1]}, y = {keys[2]}\n\rPrivate key: x = {keys[3]}");
+                File.WriteAllText(saveFileDialog.FileName, $"Public key: p = {keys[0]}, g = {keys[1]}, y = {keys[3]}\n\rPrivate key: x = {keys[2]}");
         }
     }
 }

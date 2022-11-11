@@ -8,9 +8,9 @@
             p = q = 4;
             Random random = new();
             while (!p.IsPrime())
-                p = random.NextInt64(32, 0x8f);
+                p = random.NextInt64(32, 0x7FFFFF);
             while (!q.IsPrime() || p == q)
-                q = random.NextInt64(32, 0x8f);
+                q = random.NextInt64(32, 0x7FFFFF);
             long n = p * q, mod = (p - 1) * (q - 1);
             e = mod;
             while (!e.IsCoprime(mod))
@@ -27,7 +27,7 @@
             while (true)
             {
                 while (!p.IsPrime())
-                    p = random.Next(32, 0x8f);
+                    p = random.Next(32, 0x7FFFFF);
                 if ((g = p.findPrimitive()) != -1)
                     break;
             }

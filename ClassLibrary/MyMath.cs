@@ -1,4 +1,6 @@
-﻿namespace ClassLibrary
+﻿using System.Numerics;
+
+namespace ClassLibrary
 {
     public static class MyMath
     {
@@ -118,39 +120,11 @@
         }
         public static int power(this int x, int y, int p)
         {
-            int res = 1;
-
-            x %= p;
-
-            while (y > 0)
-            {
-                if (y % 2 == 1)
-                {
-                    res = (res * x) % p;
-                }
-
-                y >>= 1;
-                x = (x * x) % p;
-            }
-            return res;
+            return (int)BigInteger.ModPow(x, y, p);
         }
         public static long power(this long x, long y, long p)
         {
-            long res = 1;
-
-            x %= p;
-
-            while (y > 0)
-            {
-                if (y % 2 == 1)
-                {
-                    res = (res * x) % p;
-                }
-
-                y >>= 1;
-                x = (x * x) % p;
-            }
-            return res;
+            return (long)BigInteger.ModPow(x, y, p);
         }
         public static int findPrimitive(this int n)
         {

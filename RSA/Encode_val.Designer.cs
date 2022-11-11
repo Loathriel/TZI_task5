@@ -85,7 +85,7 @@
             this.EG_p.Size = new System.Drawing.Size(75, 23);
             this.EG_p.TabIndex = 6;
             this.EG_p.Value = new decimal(new int[] {
-            23,
+            5870407,
             0,
             0,
             0});
@@ -129,7 +129,7 @@
             this.EG_x.Size = new System.Drawing.Size(75, 23);
             this.EG_x.TabIndex = 9;
             this.EG_x.Value = new decimal(new int[] {
-            7,
+            175,
             0,
             0,
             0});

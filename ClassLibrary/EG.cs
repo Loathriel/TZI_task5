@@ -1,4 +1,6 @@
 ﻿
+using System.Numerics;
+
 namespace ClassLibrary
 {
     public class EG
@@ -13,7 +15,7 @@ namespace ClassLibrary
             int s1 = g.power(r, p);
             int m = Hash(data);
             r = r.Invert(p - 1);
-            int s2 = ((m - x * s1) * r).Mod(p - 1);
+            int s2 = ((int)(BigInteger.Multiply(m - BigInteger.Multiply(x, s1), r) % (p - 1))).Mod(p - 1);
 
             return $"{s1} {s2}";
         }
@@ -26,7 +28,7 @@ namespace ClassLibrary
             int s1 = int.Parse(split[0]), s2 = int.Parse(split[1]);
 
             int c1 = g.power(m, p);
-            int c2 = (h.power(s1, p) * s1.power(s2, p)).Mod(p);
+            int c2 = (int)(BigInteger.Multiply(h.power(s1, p), s1.power(s2, p)) % p);
 
             return c1 == c2;
         }
